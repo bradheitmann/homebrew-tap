@@ -5,23 +5,23 @@ class Minimux < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/bradheitmann/minimux/releases/download/v0.1.0/minimux-v0.1.0-aarch64-macos.tar.gz"
-      sha256 "a90213aa83eac735d4a8d28ef627476f9ab12678d1c82dbd91cb0d3c5a9aca99"
+      url "https://github.com/bradheitmann/minimux/releases/download/v0.1.1/minimux-v0.1.1-aarch64-macos.tar.gz"
+      sha256 "b136ca4b3fd4c315dd0312411da5191a9213b9f305187b764fe2d0314beea3c5"
     end
     on_intel do
-      url "https://github.com/bradheitmann/minimux/releases/download/v0.1.0/minimux-v0.1.0-x86_64-macos.tar.gz"
-      sha256 "2fd4f3584031349fa64da0629e909f0719a8f1a4eb1697cdf8ec28f40333c65a"
+      url "https://github.com/bradheitmann/minimux/releases/download/v0.1.1/minimux-v0.1.1-x86_64-macos.tar.gz"
+      sha256 "4669529ece3a2b9196370830ca91e884d539bcd66843345f5f1e00cda17ce601"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/bradheitmann/minimux/releases/download/v0.1.0/minimux-v0.1.0-aarch64-linux.tar.gz"
-      sha256 "ee72370a9ba72cdabfa911ab2e66c6eb58668786eadc12865d5dc076ff894ace"
+      url "https://github.com/bradheitmann/minimux/releases/download/v0.1.1/minimux-v0.1.1-aarch64-linux.tar.gz"
+      sha256 "79dddd85d6250421ffb73de8dd59258c611fa928366d90cab563eb0d68cfa0ac"
     end
     on_intel do
-      url "https://github.com/bradheitmann/minimux/releases/download/v0.1.0/minimux-v0.1.0-x86_64-linux.tar.gz"
-      sha256 "cc11526487d1f742a99f5aedbf2412194385cf43bf40585f5c6802b11862ec10"
+      url "https://github.com/bradheitmann/minimux/releases/download/v0.1.1/minimux-v0.1.1-x86_64-linux.tar.gz"
+      sha256 "20d47aee1c8ea4e37670da4beed63fe948640b86a892521a74f774fb63d498eb"
     end
   end
 
