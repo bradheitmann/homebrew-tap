@@ -34,6 +34,6 @@ class Minimux < Formula
   test do
     output = shell_output("#{bin}/minimux --json system.health")
     assert_match '"product":"minimux"', output
-    assert_match '"version":"0.1.0"', output
+    assert_match '"version":"0.1.1"', output
   end
 end
