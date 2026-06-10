@@ -1,7 +1,6 @@
 class Minimux < Formula
   desc "Daemon for agent-owned PTY sessions with crash-recoverable terminal state"
   homepage "https://github.com/bradheitmann/minimux"
-  version "0.1.0"
   license "Apache-2.0"
 
   on_macos do
