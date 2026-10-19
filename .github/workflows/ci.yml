@@ -1,0 +1,28 @@
+name: Formula checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  formula:
+    runs-on: macos-latest
+    timeout-minutes: 15
+    env:
+      HOMEBREW_NO_AUTO_UPDATE: '1'
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5.1.0
+        with:
+          persist-credentials: false
+      - name: Install the candidate tap and check its formula
+        run: |
+          brew tap bradheitmann/tap "$GITHUB_WORKSPACE"
+          brew style bradheitmann/tap/minimux
+          brew audit --strict bradheitmann/tap/minimux
+          brew install bradheitmann/tap/minimux
+          brew test bradheitmann/tap/minimux
