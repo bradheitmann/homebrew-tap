@@ -19,6 +19,8 @@ jobs:
       - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5.1.0
         with:
           persist-credentials: false
+      - name: Check release promotion boundaries
+        run: python3 -m unittest discover -s tests -v
       - name: Install the candidate tap and check its formula
         run: |
           brew tap bradheitmann/tap "$GITHUB_WORKSPACE"
